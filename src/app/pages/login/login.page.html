@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+      <ion-row text-center>
+          <ion-col>
+              <ion-icon name="person"></ion-icon>
+          </ion-col>
+            
+        </ion-row >
+      
+        <ion-row text-center>
+          <ion-col>
+              <ion-list>
+                  <ion-item>
+                    <ion-label position="floating">UserID</ion-label>
+                    <ion-input type="text" [(ngModel)]="id"></ion-input>
+                  </ion-item>
+              
+                  <ion-item>
+                      <ion-label position="floating">Password</ion-label>
+                      <ion-input type="password" [(ngModel)]="password"></ion-input>
+                    </ion-item>
+                </ion-list>
+          </ion-col>
+        </ion-row>
+      
+        <ion-row text-center>
+            <ion-col>
+                <ion-button fill="solid" expand="block" (click)="login()">Login</ion-button>
+            </ion-col>
+        </ion-row>
+
+        <ion-row text-center>
+          <ion-col>
+            <ion-item  href="register">
+              <ion-label class="register_label" style="font-size: 10px; margin-right: auto; margin-left: auto;">Don't Have Account? Register!</ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+  </ion-grid>
+  
+</ion-content>

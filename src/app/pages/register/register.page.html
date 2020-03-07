@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+      <ion-row text-center>
+          <ion-col size="1"></ion-col>
+          <ion-col size="10">
+              <ion-list>
+                  <ion-item>
+                    <ion-label position="floating">ID No.</ion-label>
+                    <ion-input type="text" [(ngModel)]="matric"></ion-input>
+                  </ion-item>
+
+                  <ion-item>
+                      <ion-label position="floating">Full Name</ion-label>
+                      <ion-input type="text" [(ngModel)]="name"></ion-input>
+                  </ion-item>
+              
+                  <ion-item>
+                      <ion-label position="floating">Password</ion-label>
+                      <ion-input type="password" [(ngModel)]="password"></ion-input>
+                  </ion-item>
+          
+                  <ion-item>
+                      <ion-label position="floating">Confirm Password</ion-label>
+                      <ion-input type="password" [(ngModel)]="cpassword"></ion-input>
+                  </ion-item>
+
+                 
+          
+                  
+          
+                </ion-list>
+          </ion-col>
+          <ion-col size="1"></ion-col>
+      </ion-row>
+      
+      <ion-row text-center>
+        <ion-col>
+            <ion-button fill="solid" expand="block" color="dark" (click)="register()" >Sign Up</ion-button>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+ 
+    
+
+</ion-content>
